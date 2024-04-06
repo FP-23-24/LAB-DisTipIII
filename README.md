@@ -61,24 +61,24 @@
     - *Integer getNumeroCancionesComienzanPorCadena(String cadena)*: cuenta el número de canciones que comienzan por la cadena dada como parámetro.
     - *Duration getDuracionTotal()*: obtiene la duración total de la lista de reproducción.
     - *Duration getDuracionMedia()*: obtiene la duración media de las canciones de la lista de reproducción.
-    - *List<Cancion> getCancionesGenero(Genero genero)*: obtiene una lista con las canciones del género dado como parámetro.
+    - *List\<Cancion\> getCancionesGenero(Genero genero)*: obtiene una lista con las canciones del género dado como parámetro.
     - *Boolean existeCancionConPalabraEnTitulo(String palabra)*: devuelve *true* si existe una canción cuyo título contiene la palabra dada como parámetro, y *false* en caso contrario.
     - *Boolean todasSuperioresA(Integer minutos)*: devuelve *true* si todas las canciones tienen una duración igual o superior a la dada como parámetro, y *false* en caso contrario.
     - *Cancion getCancionMayorDuracion()*: obtiene la canción de mayor duración.
-    - *Map<Integer, List<Cancion>> agrupaCancionesPorAño()*: crea un Map que hace corresponder a cada año una lista con las canciones de ese año.
-    - *Map<Integer, List<Cancion>> agrupaCancionesArtistaPorPalabras(String artista)*: crea un Map que hace corresponder a cada número de palabras una lista con las canciones del artista dado como parámetro cuyos títulos tienen ese número de palabras.
+    - *Map<Integer, List\<Cancion\>> agrupaCancionesPorAño()*: crea un Map que hace corresponder a cada año una lista con las canciones de ese año.
+    - *Map<Integer, List\<Cancion\>> agrupaCancionesArtistaPorPalabras(String artista)*: crea un Map que hace corresponder a cada número de palabras una lista con las canciones del artista dado como parámetro cuyos títulos tienen ese número de palabras.
     - *Map<String, Long> getNumeroCancionesPorArtista()*: crea un Map que relaciona cada artista con el número de canciones del artista que hay en la lista de reproducción.
     - *Map<Genero, Duration> getDuracionCancionesPorGenero()*: crea un Map que relaciona cada género con la duración total de las canciones de ese género.
 
 1. **Competicion**
     - *Integer getVictoriasVisitantes()*: obtiene el número total de victorias obtenidas por los equipos visitantes.
     - *Integer getTotalGolesMarcados(String equipo)*:* obtiene el número total de goles marcados por el equipo dado como parámetro.
-    - *Set<String> getEquipos()*: obtiene un* conjunto con los nombres de todos los equipos que participan en la competición.
+    - *Set\<String\> getEquipos()*: obtiene un* conjunto con los nombres de todos los equipos que participan en la competición.
     - *PartidoFutbol getPartidoMasGoles()*:* obtiene el partido en el que se han marcado más goles.
     - *Integer getPuntosEquipoFecha(String equipo, LocalDate fecha)*: obtiene el número total de puntos obtenidos por el equipo dado como parámetro hasta la fecha dada como parámetro. Se consideran los partidos anteriores a esa fecha.
     - *Map<ResultadoQuiniela, Integer> contarNumPartidosPorResultado()*: crea un Map que relaciona cada resultado con el número de partidos en los que se ha dado ese resultado.
     - *Map <String, Integer> getClasificacionFinal()*: crea un Map que relaciona cada nombre de un equipo con el total de puntos obtenidos en la competición por ese equipo.
     - *Map<String, Integer> contarPartidosGanadosPorEquipo()*: crea un Map que relaciona cada equipo con el número de partidos ganados por ese equipo.
-    - *SortedMap<LocalDate, List<PartidoFutbol>> getPartidosPorFecha  ()*: crea un SortedMap que relaciona cada fecha con los partidos que se disputaron en esa fecha.
-    - *SortedMap<Integer, Set<String>> equiposPorNumeroPartidosGanados()*: crea un SortedMap que relaciona cada número con el conjunto de los equipos que han ganado ese número de partidos.
+    - *SortedMap<LocalDate, List\<PartidoFutbol\>> getPartidosPorFecha  ()*: crea un SortedMap que relaciona cada fecha con los partidos que se disputaron en esa fecha.
+    - *SortedMap<Integer, Set\<String\>> equiposPorNumeroPartidosGanados()*: crea un SortedMap que relaciona cada número con el conjunto de los equipos que han ganado ese número de partidos.
     - *String getCampeon()*: obtiene el nombre del equipo ganador de la competición.
